@@ -29,7 +29,7 @@ export default class Imageview {
                 <div>
                     <img src='https://fe-dev-matching-2021-03-serverlessdeploymentbuck-1ooef0cg8h3vq.s3.ap-northeast-2.amazonaws.com/public${
                       this.state
-                    }' onerror="alert('Internal server error'); this.parentElement.parentElement.remove(); ${this.onClose()} " />
+                    }' onerror="alert('프로그래머스 서버 오류로 이미지를 받아오는데 실패했습니다'); this.parentElement.parentElement.remove(); ${this.onClose()} " />
                 </div>
             </div>
         `;

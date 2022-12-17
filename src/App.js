@@ -15,6 +15,7 @@ export default class App {
   };
 
   cache = {};
+
   constructor($target) {
     this.$BreadCrumb = new Breadcrumb({
       $target,

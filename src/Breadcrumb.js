@@ -2,13 +2,16 @@ export default class Breadcrumb {
   state = [];
 
   constructor({ $target, onClickCrumb }) {
-    this.$BreadCrumb = document.createElement('div');
+    this.$BreadCrumb = document.createElement('nav');
     this.$BreadCrumb.classList.add('Breadcrumb');
 
     this.$BreadCrumb.addEventListener('click', (e) => {
-      const id = e.target.closest('.Crumb').dataset.id;
-      if (this.state[this.state.length - 1].id === id) return;
-      else onClickCrumb(id);
+      const crumb = e.target.closest('.Crumb');
+      if (crumb) {
+        const id = crumb.dataset.id;
+        if (this.state[this.state.length - 1].id === id) return;
+        else onClickCrumb(id);
+      }
     });
 
     $target.appendChild(this.$BreadCrumb);
