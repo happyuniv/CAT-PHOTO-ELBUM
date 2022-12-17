@@ -6,7 +6,7 @@
 [**프로젝트 링크**](https://happyuniv-cat-photo-elbum.netlify.app/)
 
 ---
-
+[문제보기](src/README.md)
 ### Review
 * CSS 선택자 를 매개변수로 자신을 포함해 부모 요소로 순회하면서 가장 가까운 요소 반환
 
